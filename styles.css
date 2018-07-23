@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+/* html5reset.css - 01/11/2011 */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000; 
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration:  line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;   
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	background: #000;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+text-align: center;
+color: #fff;
+font-size: 30px;
+line-height: 40px;
+height: 100%;
+margin: 0;
+ display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+.col {
+border: 1px solid #fff;
+min-height: 100px;
+border-radius: 10px;
+}
+
+.container {
+box-shadow: 2px 2px 5px #fff;
+height: 500px;
+width: 700px;
+position: relative;
+background: #000;
+}
+
+.wrapper {
+	background: rgba(0,0,0,0.6);
+	padding: 20px;
+	border: 2px solid #fff;
+	clear: both;
+	width: 700px;
+	float: left;
+	position: relative;
+}
+
+.cityName {
+	display: block;
+	height: 100px;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+
+.hilow {
+	font-size: 17px;
+}
+
+.hilow > .col, .changetemp > .col {
+	border: none;
+}
+
+body.main_background {
+	background-image: url("https://cdn.pixabay.com/photo/2013/07/04/13/24/cloud-143152_960_720.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+
+body.sunny {
+	background-image: url("https://images.pexels.com/photos/3768/sky-sunny-clouds-cloudy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+
+body.rainy {
+	background-image: url("https://images.unsplash.com/photo-1496034663057-6245f11be793?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3e3facdc97ce74347933f68625491ed9&auto=format&fit=crop&w=1500&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+body.cloudy {
+	background-image: url("https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+body.snow {
+	background-image: url("https://images.pexels.com/photos/60561/winter-snow-nature-60561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+body.thunderstorm {
+	background-image: url("https://cdn.pixabay.com/photo/2018/05/26/01/48/thunderstorm-3430471_960_720.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100%;
+}
+
+.wi {
+	font-size: 60px;
+}
+
+#changeTemp {
+	cursor: pointer;
+	color: #000;
+	background: #fff;
+	display:block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 20px;
+	border-radius: 50%;
+	margin-top: 25px;
+	padding: 5px;
+}
+
+#changeTemp:hover {
+background: #000;
+color: #fff;
+border: 1px solid #fff;
+}
+
+.changetemp > .col {
+	font-size: 14px;
+}
+
+.temp{
+	display: block;
+}
+
+.tempInfo {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.icon {
+	padding: 20px;
+}
+.description {
+	height: 100px;
+	display: inline-block;
+	padding: 20px;
+}
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+body {
+	background-attachment: fixed;
+}
+
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+.span_1_of_1 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+

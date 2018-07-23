@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather Viewer</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Check the Weather</h1>
+		<h4>Built by Corey Smith</h4>
+		<div class="section group">
+			<div class="col span_1_of_1">
+			<div class="cityName">...</div>
+			<p class="details">...</p>
+			</div>
+		</div>
+
+		<div class="section group">
+			<div class="col span_1_of_2 matchheight">
+				<div class="icon">
+			    	<i class="wi"></i>
+			    </div>
+			</div>
+			<div class="col span_1_of_2 matchheight">
+				<div class="description"></div>
+			</div>
+		</div>
+
+		<div class="section group">
+			<div class="col span_1_of_2 matchheight">
+				<h2>Temperature</h2>
+
+				<div class="section group hilow">
+
+					<div class="col span_1_of_3 current">
+					
+						<p>Current</p>
+						<p class="temp">...</p>
+
+					</div>
+
+					<div class="col span_1_of_3">
+						<p>High</p>
+						<p class="high">...</p>
+					</div>
+
+					<div class="col span_1_of_3">
+						<p>Low</p>
+						<p class="low">...</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="col span_1_of_2 matchheight">
+				<h2>Change View</h2>
+				<div class="section group changetemp">
+					<div class="col span_1_of_3"></div>
+					<div class="col span_1_of_3 celcius"><div id="changeTemp" class="celcius" onclick="changeTemp()">&#x2103</div></div>
+					<div class="col span_1_of_3"></div>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+</body>
+</html>
